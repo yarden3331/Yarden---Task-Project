@@ -1,0 +1,142 @@
+.container {
+    background-image: url(../Images/tile.jpg);
+    /* width: 670px; */
+    margin-top: 30px;
+}
+
+
+
+.topSection {
+    width: 670px;
+    margin: auto;
+
+}
+
+@font-face {
+    font-family: myTaskFont;
+    src: url(../Images/DancingScript-Bold.ttf);
+}
+
+h1 {
+    font-family: myTaskFont;
+    font-size: 100px;
+    text-align: center;
+}
+
+
+
+.noteBook {
+    /* height: 148px; */
+    background-image: url(../Images/formbg.jpg);
+    border-radius: 10px;
+
+}
+
+.inputMession {
+    background-color: transparent;
+
+    height: 100px;
+    width: 100%;
+    line-height: 2.18;
+    margin-top: 11.5px;
+    resize: none;
+    padding-left: 77px;
+}
+
+
+label {
+    display: block;
+
+    font: 1.5rem 'Fira Sans', sans-serif;
+
+}
+
+input,
+label {
+    margin: 0.3rem 0;
+    margin-left: 2%;
+    margin-top: 31px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+
+}
+
+.datePiker {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 10px;
+    gap: 10px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+
+
+.notesContainer {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+  
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.noteItem {
+    background-image: url(../Images/notebg.png);
+    background-repeat: no-repeat;
+    width: 185px;
+    height: 250px;
+    padding: 35px 8px;
+    position: relative;
+    animation: fadeIn 1.5s;
+}
+
+.noteText {
+
+    height: 160px;
+    padding: 14px 0px;
+    overflow-x: auto;
+    overflow-wrap: break-word;
+}
+
+.removeNoteButton {
+    display: none;
+}
+
+.noteItem:hover .removeNoteButton {
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 22px;
+    margin-left: 75%;
+}
+
+.removeNoteButton {
+    position: absolute;
+    right: 18px;
+    top: -13px;
+}
+
+.formButton {
+    line-height: 0 !important;
+    padding: 5px 10px !important;
+    height: 20px;
+}
